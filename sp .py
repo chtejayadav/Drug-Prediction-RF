@@ -40,7 +40,7 @@ def set_background(image_path):
     st.markdown(background_style, unsafe_allow_html=True)
 
 # Set background image
-image_path = "assets/bgg.gif"  # Ensure the image exists in the same directory
+image_path = "bgg.gif"  # Ensure the image exists in the same directory
 set_background(image_path)
 
 # Load the trained model (for demonstration, we train again here)
