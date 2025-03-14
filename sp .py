@@ -40,7 +40,7 @@ def set_background(image_path):
     st.markdown(background_style, unsafe_allow_html=True)
 
 # Set background image
-image_path = "bgg.gif"  # Ensure the image exists in the same directory
+image_path = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fredirect-notice--46865652364531802%2F&psig=AOvVaw0IpUAK5AsKswPYymmxM46S&ust=1742043786369000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiqlfrQiYwDFQAAAAAdAAAAABAEf"  # Ensure the image exists in the same directory
 set_background(image_path)
 
 # Load the trained model (for demonstration, we train again here)
