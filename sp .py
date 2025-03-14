@@ -10,27 +10,33 @@ from sklearn.preprocessing import LabelEncoder
 st.set_page_config(page_title="Patient Drug Prediction", layout="wide")
 
 # ✅ Function to Set Background Image (Works with URLs)
+import streamlit as st
+
+# Function to set background using direct CSS
 def set_background(image_url):
     background_style = f"""
     <style>
     .stApp {{
-        background: url("{image_url}") no-repeat center center fixed;
+        background-image: url("{image_url}");
         background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }}
     h1, h2, h3, h4, h5, h6, label, span {{
-        color: white !important; /* Ensures white text */
+        color: white !important;
     }}
     section[data-testid="stSidebar"] {{
-        background-color: rgba(0, 0, 0, 0.7) !important; /* Darkened Sidebar */
+        background-color: rgba(0, 0, 0, 0.7) !important;
         color: white !important;
     }}
     </style>
     """
     st.markdown(background_style, unsafe_allow_html=True)
 
-# ✅ Background Image (Replace with Your GitHub Raw URL)
+# Set background
 bg_url = "https://i.pinimg.com/originals/4a/15/ed/4a15edb35cf850aadc8d2bab08b2d313.gif"
 set_background(bg_url)
+
 
 # ✅ Load the trained model
 @st.cache_data
