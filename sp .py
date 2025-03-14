@@ -29,7 +29,7 @@ def set_background(image_url):
     st.markdown(background_style, unsafe_allow_html=True)
 
 # ✅ Background Image (Replace with Your GitHub Raw URL)
-bg_url = "https://raw.githubusercontent.com/your-username/your-repo/main/bgg.gif"
+bg_url = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fmotion-made-free-cardiogram-heartbeat-heat-pulse-glowing-red-neon-light-loop-animated-background-on-make-a-gif--955677983403481206%2F&psig=AOvVaw0IpUAK5AsKswPYymmxM46S&ust=1742043786369000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiqlfrQiYwDFQAAAAAdAAAAABAI"
 set_background(bg_url)
 
 # ✅ Load the trained model
