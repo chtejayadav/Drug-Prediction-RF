@@ -12,14 +12,14 @@ from sklearn.preprocessing import LabelEncoder
 st.set_page_config(page_title="Patient Drug Prediction", layout="wide")
 
 # Function to set background image and change text color
-def set_background(image_path):
-    with open(image_path, "rb") as img_file:
+def set_background(url):
+    with open(url, "rb") as img_file:
         encoded_string = base64.b64encode(img_file.read()).decode()
     
     background_style = f"""
     <style>
     .stApp {{
-        background-image: url("data:image/jpg;base64,{encoded_string}");
+        background-image: url("data:image/jpg;base64{url}");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -40,8 +40,8 @@ def set_background(image_path):
     st.markdown(background_style, unsafe_allow_html=True)
 
 # Set background image
-image_path = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fredirect-notice--46865652364531802%2F&psig=AOvVaw0IpUAK5AsKswPYymmxM46S&ust=1742043786369000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiqlfrQiYwDFQAAAAAdAAAAABAEf"  # Ensure the image exists in the same directory
-set_background(image_path)
+url = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fredirect-notice--46865652364531802%2F&psig=AOvVaw0IpUAK5AsKswPYymmxM46S&ust=1742043786369000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiqlfrQiYwDFQAAAAAdAAAAABAEf"  # Ensure the image exists in the same directory
+set_background(url)
 
 # Load the trained model (for demonstration, we train again here)
 def train_model():
