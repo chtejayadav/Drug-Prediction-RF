@@ -119,8 +119,8 @@ This project is licensed under the **MIT License**.
 
 ## 📝 Author
 
-Developed by: **Your Name**  
-📧 Email: your_email@example.com  
+Developed by: **CH TEJA YADAV**  
+📧 Email: tejayadavch@gmail.com  
 💻 GitHub: [YourGitHubProfile](https://github.com/yourusername)  
 📢 Feel free to reach out for any questions or contributions!
 
