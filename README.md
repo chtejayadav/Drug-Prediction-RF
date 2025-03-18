@@ -122,7 +122,6 @@ This project is licensed under the **MIT License**.
 Developed by: **CH TEJA YADAV**  
 📧 Email: tejayadavch@gmail.com  
 💻 GitHub: https://github.com/chtejayadav  
-📢 Feel free to reach out for any questions or contributions!
 
 ---
 
