@@ -104,7 +104,7 @@ The dataset is preprocessed using **Pandas** and categorical variables are encod
    ```bash
    streamlit run app.py
    ```
-4. Open your browser and go to `http://localhost:8501/` to use the app.
+4. To use the app click here https://ch-teja-yadav-drug-prediction-rf.streamlit.app/
 
 ---
 ## 💾 Model Training & Updating
